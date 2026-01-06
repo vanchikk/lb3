@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Аналіз оцінок студентів</title>
+</head>
+<body>
+    <h1>Форма введення даних студентів</h1>
+
+    <form id="studentForm">
+        <label>Прізвище студента: <input type="text" id="surname" required></label><br><br>
+        <button type="button" id="generateRandom">Заповнити випадковими оцінками</button><br><br>
+        <label>Оцінка 1: <input type="number" min="2" max="5" class="grade" required></label><br>
+        <label>Оцінка 2: <input type="number" min="2" max="5" class="grade" required></label><br>
+        <label>Оцінка 3: <input type="number" min="2" max="5" class="grade" required></label><br>
+        <label>Оцінка 4: <input type="number" min="2" max="5" class="grade" required></label><br>
+        <label>Оцінка 5: <input type="number" min="2" max="5" class="grade" required></label><br><br>
+        <button type="submit">Додати студента</button>
+    </form>
+    <br>
+    <button id="showSummary">Показати зведення</button>
+
+    <h2>Зведення:</h2>
+    <div id="summary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
